@@ -3,13 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>Renzhi "Grant" Chan Portfolio</title>
+	
+	<!-- This links the reset sheet to the html doc-->
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+
 	<!-- This links the style sheet to the html doc-->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<!-- This links the reset sheet to the html doc-->
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+
 </head>
 
 <body class="Site">
+
 		<header>
 		<!-- title, also home button -->
 		
@@ -19,11 +23,11 @@
 			<!-- navigation bar -->
 			<ul class="navbar">
 				
-				<il>About</il>
+				<a href="index.html"><il>About</il></a>
 				<il> | </il>
-				<il>Portfolio</il>
+				<a href="portfolio.html"><il>Portfolio</il></a>
 				<il> | </il>
-				<il>Contact</il>
+				<a href="contact.html"><il>Contact</il></a>
 
 			</ul>
 
@@ -37,11 +41,31 @@
 						
 						<div class="container_contact">
 							
-							<h2 class="titletext">Contact Me</h2>
+							<h2 class="titletext">Contact</h2>
 
 							<hr class="horzrule">
 
-							<!-- Form blanks -->
+								<!-- Form blanks -->
+
+								<form action = "action_page.php">
+
+								Name:<br>
+								
+								<input type="text" name="Name"><br>
+								
+								E-mail:<br>
+								
+								<input type="text" name="Email"><br>
+
+								Message:<br>
+								
+								<textarea type="text" name="Message" id="messagearea"></textarea><br>								
+								
+	
+								<!-- Submit button for action_page.php -->
+								<input type="submit" value="Submit" id="submitbutton">
+
+								</form>
 							
 						</div>
 
